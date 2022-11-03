@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## TROUBLESHOOTING
+- Following parameters might need to be added in package.json in case you get exception when you start the app.
+```json
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider DISABLE_ESLINT_PLUGIN=true react-scripts start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider DISABLE_ESLINT_PLUGIN=true  react-scripts test",
+    "eject": "react-scripts eject"
+  },
+```
