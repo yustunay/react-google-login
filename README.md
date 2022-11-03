@@ -80,3 +80,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
     "eject": "react-scripts eject"
   },
 ```
+
+## NOTE
+- Create the .env file in root folder and add **REACT_APP_GOOGLE_CLIENT_ID** parameter.
+
